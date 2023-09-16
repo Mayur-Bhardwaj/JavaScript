@@ -1,3 +1,3 @@
 # JavaScript
 #Print Statement
-#Valriables
+#Variables
