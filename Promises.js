@@ -19,3 +19,22 @@ data.then((item)=>{
 });
 
 console.log("Hello, Mayur Bhardwaj"); //First They run then Above code Print Because they used setTimeout.
+
+
+// If Our Code is rejected
+
+
+let data1 = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        reject("Code have some issues.");  // resolve({name: "Mayur", age: 22})
+    },2000)
+})
+data.then((item)=>{
+  console.log(item);  
+}).catch((err)=>{
+    console.log("Catch block",err);
+})
+
+console.log("Hello, Mayur Bhardwaj");
+
+//With reject we use catch, if we cannot use it then they will give an error.
